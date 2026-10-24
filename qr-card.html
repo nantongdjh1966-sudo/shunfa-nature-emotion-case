@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>案例证据网站二维码</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 900px; height: 1200px; overflow: hidden; }
+    body {
+      color: #173f35; background: #f3efe3; font-family: "PingFang SC", sans-serif;
+      background-image:
+        linear-gradient(rgba(23,63,53,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23,63,53,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .card { position: relative; width: 100%; height: 100%; padding: 74px; overflow: hidden; }
+    .card::before {
+      content: ""; position: absolute; width: 500px; height: 500px; border-radius: 50%;
+      right: -210px; top: -220px; border: 1px solid rgba(23,63,53,.13);
+      box-shadow: 0 0 0 70px rgba(23,63,53,.028), 0 0 0 140px rgba(23,63,53,.018);
+    }
+    .top { display: flex; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid rgba(23,63,53,.24); font-size: 13px; letter-spacing: .14em; }
+    .top b { font-family: "Songti SC", serif; font-size: 21px; letter-spacing: .06em; }
+    .kicker { margin: 82px 0 18px; color: #c68a45; font-size: 12px; letter-spacing: .2em; font-weight: 700; }
+    h1 { margin: 0; font-family: "Songti SC", serif; font-size: 72px; line-height: 1.12; letter-spacing: -.045em; }
+    h1 span { display: block; color: transparent; -webkit-text-stroke: 1px #173f35; }
+    .sub { max-width: 650px; margin: 28px 0 44px; color: #50665a; font-family: "Songti SC", serif; font-size: 22px; line-height: 1.75; }
+    .qr-zone { display: grid; grid-template-columns: 330px 1fr; gap: 42px; align-items: center; padding: 28px; background: #173f35; color: #f3efe3; }
+    .qr-zone img { width: 330px; height: 330px; background: #f3efe3; }
+    .qr-zone h2 { margin: 0 0 18px; font-family: "Songti SC", serif; font-size: 35px; }
+    .qr-zone p { margin: 0; color: rgba(255,255,255,.68); font-size: 13px; line-height: 1.9; word-break: break-all; }
+    .qr-zone b { display: block; margin-top: 18px; color: #e1b56c; font-size: 11px; letter-spacing: .08em; }
+    .footer { display: flex; justify-content: space-between; gap: 30px; margin-top: 30px; padding-top: 18px; border-top: 1px solid rgba(23,63,53,.22); color: #6a786e; font-size: 11px; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="top">
+      <b>顺发御园幼儿园</b>
+      <span>全国教育科学规划项目 · 幼儿园实践子课题</span>
+      <span>2026 / 南通</span>
+    </div>
+    <p class="kicker">SCAN TO READ THE EVIDENCE</p>
+    <h1><span>扫码进入</span><span>案例证据页</span></h1>
+    <p class="sub">申报表、成果总结、七次现场与核心证据摘编，一页直达。</p>
+    <section class="qr-zone">
+      <img src="assets/images/qr-site.png" alt="案例证据网站二维码">
+      <div>
+        <h2>远程阅卷</h2>
+        <p>https://nantongdjh1966-sudo.github.io/<br>shunfa-nature-emotion-case/</p>
+        <b>项目编号 BEA230076</b>
+      </div>
+    </section>
+    <div class="footer">
+      <span>公开页不使用儿童正脸照片<br>仅供本次案例评审使用</span>
+      <span>完整原件包经百度网盘定向共享<br>申报单位：顺发御园幼儿园</span>
+    </div>
+  </main>
+</body>
+</html>
